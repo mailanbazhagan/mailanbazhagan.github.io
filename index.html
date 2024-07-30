@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("anbu2.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.topnav {
+  text-align: center;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav nav {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.topnav nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav nav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.content {
+      padding: 20px;
+      display: none;
+    }
+
+.content.active {
+      display: block;
+    }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style>
+</head>
+<body>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">I'm Dr. M. Anbazhagan</h1>
+    <p style="font-size:20px">and I'm a Passionate Computer Engineering Teacher</p>
+ </div>
+</div>
+
+<div class="topnav">
+  <nav>
+    <a class="active" href="javascript:void(0)" onclick="showContent('bio')">My Bio</a>
+    <a href="javascript:void(0)" onclick="showContent('research')">My Research</a>
+    <a href="javascript:void(0)" onclick="showContent('publications')">Publications</a>
+    <a href="javascript:void(0)" onclick="showContent('courses')">Courses</a>
+    <a href="javascript:void(0)" onclick="showContent('contact')">Contact</a>
+  </nav>
+</div>
+
+<div id="bio" class="content active">
+  <h2 style="color:rgb(4, 66, 75);">About me</h2>
+  <p style="text-align:justify;">Growing up in a rural district of Tamil Nadu, my journey from a small village to the world of academia has 
+    been shaped by dedicated teachers, inspiring college professors, and a supportive Ph.D. supervisor. My passion 
+    for engineering ignited in the 8th grade and has been complemented by an inherent love for teaching and sharing knowledge.</p>
+
+  <p style="text-align:justify;">For the past 16 years, I have been immersed in the world of education, teaching core computer engineering courses such as 
+    data structures, sequential and parallel algorithms, operating systems, database systems, and computer networks. Among these, 
+    my courses on machine learning and neural networks for deep learning hold a special place, reflecting the forefront of technological 
+    advancement and my dedication to staying current in these rapidly evolving fields.</p> 
+
+  <p style="text-align:justify;">I firmly believe in the mantra: "Let teaching be your passion and sharing of knowledge be your motto." This philosophy has guided my 
+     career, driving me to inspire and mentor the next generation of engineers.</p> 
+
+  <p style="text-align:justify;">Despite two decades of continuous learning and teaching, my thirst for knowledge remains unquenched. I am keen to embark on a post-doctoral 
+    journey at a renowned university in the UK or USA, further honing my expertise and contributing to the academic community. I look forward to 
+    updating this space with news of that achievement soon.</p>
+
+  <p style="text-align:justify;">A particularly remarkable achievement in my career is my ongoing project funded by LAM Research, worth $50,000. The project, titled 
+    "Blockchain-enabled Forecasting and Optimization Framework for Supply Chain Capacity Planning using AI," is one of only 20 proposals 
+    selected across the globe. This innovative work aims to leverage blockchain and AI to revolutionize supply chain capacity planning, 
+    showcasing my commitment to cutting-edge research.</p>
+  
+  <h2 style="color:rgb(4, 66, 75);">Alma mater</h2>
+    <table>
+      <tr>
+        <th>Education</th>
+        <th>Institution</th>
+        <th>Grade/GGPA</th>
+      </tr>
+      <tr>
+        <td>HSC</td>
+        <td>Government Higher Secondary School, Kurumbalur</td>
+        <td>84.46%</td>
+      </tr>
+      <tr>
+        <td>B.E. in CSE</td>
+        <td>Roever Engineering College, Perambalur</td>
+        <td>78</td>
+      </tr>
+      <tr>
+        <td>M.E. in CSE</td>
+        <td>M.A.M. College of Engineering, Trichy</td>
+        <td>8.694</td>
+      </tr>
+      <tr>
+        <td>Ph.D.</td>
+        <td>National Institute of Technology, Trichy</td>
+        <td>9</td>
+      </tr>
+    </table>
+
+</div>
+
+<div id="research" class="content">
+  <h2 style="color:rgb(4, 66, 75);"> Ph.D. Research</h2>
+
+  <p style="text-align:justify;">My Ph.D. research focused on developing enhanced review rating prediction methodologies that effectively 
+    transform text reviews—an abundant and expressive source of insights—into precise ratings. These predicted 
+    ratings are subsequently integrated into traditional collaborative filtering, machine learning (ML), and deep 
+    learning (DL) algorithms to generate accurate recommendations. This innovative approach aims to bridge the gap 
+    between qualitative review content and quantitative rating systems, ultimately improving recommendation accuracy 
+    and user satisfaction.</p>
+
+  <img src="Research.png" alt="Paris" style="width:50%;">  
+
+  <h2 style="color:rgb(4, 66, 75);">Abstract of My Ph.D. Dissertation</h2>
+
+  <p style="text-align:justify;">The rise of E-commerce and Social networks during the last few decades has made Recommender 
+    System (RS) an essential one in our day-to-day life. The conventional "Word-of-Mouth Recommendations" are getting 
+    replaced by reviews and ratings given by users. According to ReviewTrackers online survey (2018), more than 90% of 
+    the users are going through online reviews before making a purchase decision. The insights present in reviews would 
+    help users make personal purchase decisions, track the product quality, and understand the public's opinion.</p>
+
+  <p style="text-align:justify;">There are hundreds of review websites available online and thousands of reviews written for 
+    every product. Owing to this voluminous nature of reviews, identifying appropriate reviews is a challenging task for users.
+     Furthermore, for certain domains, like restaurants, reviews may not be accompanied by overall ratings. Therefore, 
+     identifying informative/insightful reviews from a huge pile is necessary. A straightforward way of doing this is to 
+     understand the sentiment polarity of reviews. But, it is difficult to choose one single product from a set of products 
+     which are said to have positive polarity. According to the aforementioned survey, 70% of the customers say that they 
+     use ratings to filter out low-quality products in their product searches. Hence, a more granular measure of reviews 
+     which helps users infer better opinions is numeric ratings. </p>
+
+  <p style="text-align:justify;">The review rating prediction problem can be approached in two different ways, namely, 
+    review content analysis and Collaborative Filetring (CF). The former one uses the Natural Language Processing (NLP) 
+    principles together with a Machine Learning (ML) or Deep Learning (DL) model to turn reviews into ratings. The latter 
+    one uses CF algorithms to predict the missing ratings in User-Item (UI) matrix. Four different review rating prediction 
+    approaches which exploit the aforesaid ways, namely Credible User Review Incorporated Collaborative Filtering (CURICF), 
+    Sentiment Enriched and Latent Dirichlet Allocation based review rating Prediction (SELDAP), Deep Learning based and 
+    Sentiment enriched Rating (DLSR) prediction, and Class Imbalance Aware Review (CIAR) rating prediction are proposed 
+    in this research.</p>   
+
+  <p style="text-align:justify;">The CURICF is a hybrid rating prediction approach that tries to predict the missing 
+    ratings in UI matrix by employing user-based CF and the useful insights present in the credible reviews. To gauge 
+    the credibility of a review, three factors such as the reputation of the reviewer, content quality, and the number 
+    of helpful votes received by the review are utilized.</p>
+
+  <p style="text-align:justify;">The SELDAP approach effectively capitalizes the insights present in reviews and the power 
+    of ML techniques. This approach treats the rating prediction task as a regression problem. The latent topics that 
+    describe the review texts and lexicon-based sentiment scores calculated from those reviews are together used for 
+    training a ML regression model. The back propagation of Latent Dirichlet Allocation (LDA) is used to find the topic 
+    distribution and Valence-Aware Dictionary and sEntiment Reasoning (VADER) is used to infer the sentiment scores.</p>
+
+  <p style="text-align:justify;">The DLSR approach treats the rating prediction as a multi-class classification problem. 
+    An empirical review of feature extraction techniques such as, LDA and Non-negative Matrix Factorization (NMF), and 
+    Term Frequency-Inverse Document Frequency (TF-IDF) is carried out in this work to examine their relative prediction 
+    performances. For the sake of empowering the rating prediction task with DL techniques, Long Short-Term Memory (LSTM) 
+    form of Recurrent Neural Networks (RNN) is used to train the prediction model and in turn to predict the ratings.</p>
+
+  <p style="text-align:justify;">The CIAR approach tries to reduce the effect of class imbalance issue on review rating 
+    prediction task by incorporating appropriate re-sampling techniques and ensemble structures. The combination of random 
+    Under-sampling of the majority class and Synthetic Minority Over-sampling Technique (SMOTE) based Over-sampling of 
+    minority classes is used in CIAR to create balanced datasets. The integration of Bagging and Boosting is used in 
+    predicting the ratings corresponding to reviews. </p>    
+
+  <p style="text-align:justify;">For experimental works, Amazon products dataset, Yelp restaurant dataset, and Coursera's 
+    course review dataset are used. The performances of the proposed approaches are compared with certain state-of-the-art 
+    techniques. The experimental results show that the proposed works outperform the baselines with respect to various 
+    aspects.</p>
+
+</div>
+
+<div id="publications" class="content">
+  <h2>Journal Publications</h2>
+  <table>
+    <tr>
+      <th>Sl. No.</th>
+      <th>Article Details</th>
+      <th>Indexing</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Anitha M, Ravimaran S, Mohamed MM, Anbazhagan M. Sensor grid based vision status monitoring in eye care system. 
+          International Journal of Future Computer and Communication. 2012 Jun 1;1(1):57.</td>
+      <td>Google Scholar</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Anbazhagan M, Arock M. Collaborative filtering algorithms for recommender systems. Int. J. Control Theory Appl. 
+        2016;9(27):127-36.</td>
+      <td>Scopus</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Mahadevan A, Arock M. Integrated topic modeling and sentiment analysis: a review rating prediction approach for 
+        recommender systems. Turkish Journal of Electrical Engineering and Computer Sciences. 2020;28(1):107-23.</td>
+      <td>SCI</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>National Institute of Technology, Trichy</td>
+      <td>9</td>
+    </tr>
+  </table>
+</div>
+
+<div id="courses" class="content">
+  <h2>Courses</h2>
+  <p>Information about the courses I teach.</p>
+</div>
+
+<div id="contact" class="content">
+  <h2>Contact</h2>
+  <p>Information about the courses I teach.</p>
+</div>
+
+<script>
+  function showContent(sectionId) {
+    var contents = document.getElementsByClassName('content');
+    for (var i = 0; i < contents.length; i++) {
+      contents[i].classList.remove('active');
+    }
+    document.getElementById(sectionId).classList.add('active');
+
+    var navLinks = document.querySelectorAll('.topnav nav a');
+    navLinks.forEach(link => link.classList.remove('active'));
+    document.querySelector('.topnav nav a[href*="' + sectionId + '"]').classList.add('active');
+  }
+</script>
+
+</body>
+</html>
